@@ -1,7 +1,7 @@
 {
   "user": {
     "first_name": "Zhakshylyk",
-    "photo" : "https://drive.google.com/file/d/19ZMa6F-CABOhTYpz_Y3fSkMGoVxFtXi5/view?usp=sharing",
+    "photo": "https://docs.google.com/uc?id=1bOmMm20jvOMWtL8zDC3AdQy6WKLksjem",
     "second_name": "Kalysbek uulu",
     "education": 2,
     "age": 19,
@@ -11,8 +11,8 @@
         "position": "Android Developer"
       },
       {
-        "name": "Anime",
-        "position": "Anime watcher"
+        "name": "Google",
+        "position": "Google Developer"
       }
     ]
   }
