@@ -1,10 +1,10 @@
-package com.example.candidatetestapp
+package com.example.candidatetestapp.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.example.candidatetestapp.ui.MainActivity
+import com.example.candidatetestapp.R
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

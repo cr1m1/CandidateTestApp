@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CandidateTestApp">
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".ui.SplashScreenActivity"
             android:theme="@style/Theme.CandidateTestApp.NoActionBar"
             android:exported="true"
             tools:ignore="WrongManifestParent">
