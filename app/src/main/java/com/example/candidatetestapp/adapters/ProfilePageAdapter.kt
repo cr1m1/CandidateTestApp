@@ -6,10 +6,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.candidatetestapp.R
+import com.example.candidatetestapp.models.Company
 
-class ProfilePageAdapter: RecyclerView.Adapter<ProfilePageAdapter.ViewHolder>() {
-
-
+class ProfilePageAdapter(val companies: List<Company>): RecyclerView.Adapter<ProfilePageAdapter.ViewHolder>() {
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var companyInfo: TextView = view.findViewById(R.id.profile_company)
@@ -22,12 +21,8 @@ class ProfilePageAdapter: RecyclerView.Adapter<ProfilePageAdapter.ViewHolder>() 
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.companyInfo.text = ""
+        holder.companyInfo.text = companies[position].name + ", " + companies[position].position
     }
 
-    override fun getItemCount(): Int {
-        return 1
-    }
-
-
+    override fun getItemCount(): Int = companies.size
 }

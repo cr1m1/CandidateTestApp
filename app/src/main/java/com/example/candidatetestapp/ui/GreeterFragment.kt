@@ -7,13 +7,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.example.candidatetestapp.adapters.ProfilePageAdapter
 import com.example.candidatetestapp.databinding.FragmentGreeterBinding
 import com.example.candidatetestapp.viewmodel.DataViewModel
 
 class GreeterFragment : Fragment() {
     private lateinit var binding: FragmentGreeterBinding
     private lateinit var viewModel: DataViewModel
+    private lateinit var profilePageAdapter: ProfilePageAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -39,6 +42,10 @@ class GreeterFragment : Fragment() {
             .load(user.photo)
             .centerCrop()
             .into(binding.profileImage)
+
+        profilePageAdapter = ProfilePageAdapter(user.company)
+        binding.profileRecyclerview.layoutManager = LinearLayoutManager(activity)
+        binding.profileRecyclerview.adapter = profilePageAdapter
 
         return binding.root
     }
