@@ -1,11 +1,10 @@
-package com.example.candidatetestapp
+package com.example.candidatetestapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import com.example.candidatetestapp.R
 import com.example.candidatetestapp.databinding.ActivityMainBinding
-import com.example.candidatetestapp.viewmodel.DataViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {

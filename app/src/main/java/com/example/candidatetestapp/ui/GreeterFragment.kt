@@ -1,4 +1,4 @@
-package com.example.candidatetestapp
+package com.example.candidatetestapp.ui
 
 import android.os.Bundle
 import android.util.Log
@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.candidatetestapp.databinding.FragmentGreeterBinding
-import com.example.candidatetestapp.models.Education
 import com.example.candidatetestapp.viewmodel.DataViewModel
 
 class GreeterFragment : Fragment() {

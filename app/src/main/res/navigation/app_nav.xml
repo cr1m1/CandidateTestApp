@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/greeterFragment"
-        android:name="com.example.candidatetestapp.GreeterFragment"
+        android:name="com.example.candidatetestapp.ui.GreeterFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_greeter" />
     <fragment
