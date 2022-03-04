@@ -19,7 +19,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/galleryRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="add photo"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="64dp"
         android:layout_marginRight="16dp"
         android:src="@drawable/ic_photo"/>
 
