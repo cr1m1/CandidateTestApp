@@ -13,12 +13,14 @@
         tools:listitem="@layout/gallery_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/galleryFloatingBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/galleryRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="add photo"
-        android:layout_margin="16dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginRight="16dp"
         android:src="@drawable/ic_photo"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
